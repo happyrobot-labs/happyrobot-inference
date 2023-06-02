@@ -14,10 +14,11 @@ Install dependencies
 
 ## Usage
 
-    python run_inference.py <PATH_TO_IMAGE_OR_FOLDER> --endpoint <ENDPOINT> --apikey <API_KEY>
+    python run_inference.py <PATH_TO_IMAGE_OR_FOLDER> --endpoint <ENDPOINT> --apikey <API_KEY> [--visualize] [--save_images] [--output_folder <OUTPUT_FOLDER>] [--save_json]
 
-You can use the `--visualize` flag to show results in a window.
+### Arguments
 
-    python run_inference.py <PATH_TO_IMAGE_OR_FOLDER> --endpoint <ENDPOINT> --apikey <API_KEY> --visualize
-
-Or you can use the `--save` flag to save results to disk. If you do so, you can optionally define the `--output_folder` where you'd like to save results.
+- `--visualize`: flag to show results in a window.
+- `--save_images`: flag to save results to disk.
+- `--output_folder`: path to folder where to save results.
+- `--save_json`: flag to save results to disk in json format.
